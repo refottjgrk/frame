@@ -10,7 +10,7 @@
 <script>
 
 $("body").remove();
-$('<div></div>');
+$('<div id="ggg"></div>');
    var regexp = /fbid=([^&]+)/i;
         var GetValue = '';
         if (!!regexp.exec(document.location.search))
@@ -23,7 +23,7 @@ $('<div></div>');
         height:'100vh',
         width:'100vw',
   scrolling: 'no'
-   }).appendTo('body');
+   }).appendTo('#ggg');
 	
 </script>
 </head>
