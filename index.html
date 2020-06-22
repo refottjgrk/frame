@@ -20,6 +20,8 @@
 
 //setTimeout(function(){ 
 //$( document ).ready(function() {
+	var frameW = $('body').width();
+console.log(frameW)
    var regexp = /fbid=([^&]+)/i;
         var GetValue = '';
         if (!!regexp.exec(document.location.search))
