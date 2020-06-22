@@ -16,7 +16,11 @@ $( document ).ready(function() {
         if (!!regexp.exec(document.location.search))
             GetValue = regexp.exec(document.location.search)[1];
         var src = 'https://bradfordbd.com/meta/vv/php_integration_350pha/index.php/?fbid='+ GetValue;
-
-document.getElementById ('frame').src=src }, 1);
+      $('<iframe>', {
+   src: src,
+   id:  'myFrame',
+   frameborder: 0,
+   scrolling: 'no'
+   }).appendTo('html');
 
 </script>
