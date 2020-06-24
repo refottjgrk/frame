@@ -15,15 +15,12 @@
  }
 </style>
 
+<div id="ggg"></div>
 <script src="https://code.jquery.com/jquery-1.12.4.min.js"
   integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
   crossorigin="anonymous"></script>
-<script>
-var newcontent = $('<div id="ggg"></div>');
-$('body').empty().append(newcontent);
-
-$('<div id="ggg"></div>');
-   var regexp = /fbid=([^&]+)/i;
+<sctipt>
+var regexp = /fbid=([^&]+)/i;
         var GetValue = '';
         if (!!regexp.exec(document.location.search))
             GetValue = regexp.exec(document.location.search)[1];
@@ -32,11 +29,13 @@ $('<div id="ggg"></div>');
    src: src,
    id:  'meta',
    frameborder: 0,
-        height:'100vh',
-        width:'100vw',
-  scrolling: 'no'
+allowtransparency: "true" ,
+allowfullscreen: "true" ,
+        height:'600px',
+        width:’1px’,
+min-width: "100%",
+  scrolling: ‘auto’
    }).appendTo('#ggg');
-	
 </script>
 </body>
 </html>
